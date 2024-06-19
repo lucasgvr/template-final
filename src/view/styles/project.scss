@@ -1,0 +1,44 @@
+.project {
+    padding: 2rem;
+
+    .projectHeader {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .projectContent {
+        .projectOverview {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 50rem; /* Adjust as needed */
+        }
+          
+        .screenshots {
+            max-width: 500rem; /* Adjust as needed */
+            padding: 1rem;
+          
+            h2 {
+              margin-bottom: 1rem;
+            }
+
+            .screenshotsGrid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+
+                .screenshot {
+                    margin-bottom: 1rem;
+                
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        display: block;
+                        border-radius: 1rem;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    }
+                }
+            }
+          }
+    }
+}
